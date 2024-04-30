@@ -17,7 +17,8 @@ function App() {
       < BrowserRouter>
       <Nav />
       <Routes>
-        <Route path='/' element={<EventList/>} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/events' element={<EventList/>} />
         <Route path='/add' element={<AddEvent/>} />
         <Route path='/update/:id' element={<UpdateEvent/>} />
         <Route path='/logout' element={<h1>Logout Component</h1>} />
