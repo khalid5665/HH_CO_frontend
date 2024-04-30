@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+eimport React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -10,7 +10,7 @@ const Login = () => {
         const auth = localStorage.getItem('user');
         if (auth) {
             
-            navigate('/')
+            navigate('/events')
         }
     }, [navigate])
     const handleLogin = async () => {
@@ -25,7 +25,7 @@ const Login = () => {
         console.warn(result)
         if (result.name) {
             localStorage.setItem('user', JSON.stringify(result));
-            navigate('/')
+            navigate('/events')
         }
         else {
             alert("invalid credintials")
