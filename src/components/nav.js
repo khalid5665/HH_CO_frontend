@@ -1,4 +1,4 @@
-import React from "react";
+simport React from "react";
 import { Link, useNavigate } from "react-router-dom";
 const Nav = () => {
     const auth = localStorage.getItem('user');
@@ -14,7 +14,7 @@ const Nav = () => {
                 auth ?
 
                     <ul className="nav-ul">
-                        <li><Link to='/'>Events</Link></li>
+                        <li><Link to='/events'>Events</Link></li>
                         <li><Link to='/add'>Add Events</Link></li>
                         <li><Link onClick={logout} to='/signup'>Logout ({JSON.parse(auth).name})</Link></li>
                     </ul>
@@ -22,7 +22,7 @@ const Nav = () => {
                     <>
                     <h2 className="company">Happy Happening Co.</h2>
                     <ul className="nav-ul nav-right">
-                        <li><Link to='/home'>Home</Link></li>
+                        <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about us'>About us</Link></li>
                         <li><Link to='/signup'>Sign Up</Link></li>
                         <li><Link to='/login'>Login</Link></li>
