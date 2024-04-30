@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+timport React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const UpdateEvent = () => {
@@ -37,7 +37,7 @@ const UpdateEvent = () => {
         result = await result.json()
         if (result) {
             alert("Event updated successfully");
-            navigate('/')
+            navigate('/events')
         }
     }
     return (
